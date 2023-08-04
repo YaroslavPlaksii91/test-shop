@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import Product from '../Product/Product.jsx';
+import Product from '../Product/Product.js';
 
 class ProductsList extends Component {
   render() {

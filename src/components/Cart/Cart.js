@@ -7,7 +7,7 @@ class Cart extends Component {
 
     return (
       <div>
-        <h2>Кошик</h2>
+        <h2>Cart</h2>
         {products.length === 0 ? (
           <p>Кошик пустий (0 грн)</p>
         ) : (

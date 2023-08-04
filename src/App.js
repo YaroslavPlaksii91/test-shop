@@ -2,10 +2,8 @@ import React, {Component} from 'react';
 
 import products from '../public/products';
 
-import ProductsList from './components/ProductsList/ProductsList.jsx';
-import Cart from './components/Cart/Cart.jsx';
-
-import './index.scss';
+import ProductsList from './components/ProductsList/ProductsList.js';
+import Cart from './components/Cart/Cart.js';
 
 class App extends Component {
   state = {

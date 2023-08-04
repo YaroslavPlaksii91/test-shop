@@ -1,40 +1,31 @@
 import React, {Component} from 'react';
 
 class Cart extends Component {
-  state = {
-    cartItems: [],
-  };
-
-  handleClearCart = () => {
-    // Логіка очищення кошика
-  };
-
   render() {
-    const {cartItems} = this.state;
-    const totalCost = cartItems.reduce((sum, item) => sum + item.price, 0);
+    const {products, clearCart} = this.props;
+    const totalCost = products.reduce((sum, product) => sum + product.price, 0);
 
     return (
       <div>
         <h2>Кошик</h2>
-        {cartItems.length === 0 ? (
+        {products.length === 0 ? (
           <p>Кошик пустий (0 грн)</p>
         ) : (
           <div>
             <ul className="list-group">
-              {cartItems.map((item) => (
+              {products.map((product) => (
                 <li
-                  key={item.id}
+                  key={product.id}
                   className="list-group-item"
                 >
-                  <span>
-                    {item.name} - {item.price} грн
-                  </span>
+                  <h3>{product.name}</h3>
+                  <p>{product.price} грн</p>
                 </li>
               ))}
             </ul>
             <p>Загальна вартість: {totalCost} грн</p>
             <button
-              onClick={this.handleClearCart}
+              onClick={clearCart}
               className="btn btn-danger"
             >
               Очистити

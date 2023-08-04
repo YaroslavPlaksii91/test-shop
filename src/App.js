@@ -55,15 +55,15 @@ class App extends Component {
     return (
       <div className="container">
         <h1 className="h1 text-center mb-4">Demo Store</h1>
-        <div className="row">
-          <div className="col-md-8">
+        <div className="wrapper">
+          <div className="products-wrap">
             <ProductsList
               products={products}
               addToCart={this.handleAddToCart}
               cart={cart}
             />
           </div>
-          <div className="col-md-4">
+          <div className="cart-wrap">
             <Cart
               products={cart}
               clearCart={this.handleClearCart}

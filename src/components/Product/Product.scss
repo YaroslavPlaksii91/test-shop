@@ -1,8 +1,10 @@
-.product-image {
-  height: 420px;
-}
-
 .product-price {
   font-size: 16px;
   font-weight: 500;
+}
+
+@media (min-width: 1280px) {
+  .product-image {
+    height: 420px;
+  }
 }

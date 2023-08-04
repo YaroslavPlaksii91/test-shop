@@ -7,10 +7,10 @@ class Cart extends Component {
     const totalCost = products.reduce((sum, product) => sum + product.price, 0);
 
     return (
-      <div className="text-center">
+      <section className="text-center">
         <h2 className="h2 mb-4">Cart</h2>
         {products.length === 0 ? (
-          <p>Cart id empty (0 UAH)</p>
+          <p className="product-price">Cart is empty (0 UAH)</p>
         ) : (
           <div>
             <ul className="list-group mb-4">
@@ -35,7 +35,7 @@ class Cart extends Component {
             </button>
           </div>
         )}
-      </div>
+      </section>
     );
   }
 }

@@ -3,36 +3,42 @@
         "id": 1,
         "name": "Apple iPhone 13 128GB Midnight",
         "price": 31499,
-        "image": "images/image-1.webp"
+        "image": "images/image-1.webp",
+        "isAdded": false
     },
     {
         "id": 2,
         "name": "Apple iPhone 14 Pro Max 128GB Purple",
         "price": 54999,
-        "image": "images/image-2.webp"
+        "image": "images/image-2.webp",
+        "isAdded": false
     },
     {
         "id": 3,
         "name": "Apple iPhone 14 128GB Midnight",
         "price": 38999,
-        "image": "images/image-3.webp"
+        "image": "images/image-3.webp",
+        "isAdded": false
     },
     {
         "id": 4,
         "name": "Apple iPhone SE 64GB 2022 Starlight",
         "price": 16999,
-        "image": "images/image-4.webp"
+        "image": "images/image-4.webp",
+        "isAdded": false
     },
     {
         "id": 5,
         "name": "Apple iPhone 14 Plus 128GB Midnight",
         "price": 43999,
-        "image": "images/image-5.webp"
+        "image": "images/image-5.webp",
+        "isAdded": false
     },
     {
         "id": 6,
         "name": "Apple iPhone 11 128GB Black",
         "price": 23499,
-        "image": "images/image-6.webp"
+        "image": "images/image-6.webp",
+        "isAdded": false
     }
 ]

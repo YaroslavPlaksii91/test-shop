@@ -21,7 +21,7 @@ class App extends Component {
 
     this.setState(
       (prevState) => ({
-        cart: [...prevState.cart, productToAdd],
+        cart: [...prevState.cart, {...productToAdd, isAdded: true}],
       }),
       () => {
         this.saveCartDataToLocalStorage(this.state.cart);
@@ -60,6 +60,7 @@ class App extends Component {
             <ProductsList
               products={products}
               addToCart={this.handleAddToCart}
+              cart={cart}
             />
           </div>
           <div className="col-md-4">

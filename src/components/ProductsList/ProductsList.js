@@ -5,7 +5,7 @@ import Product from '../Product/Product.js';
 
 class ProductsList extends Component {
   render() {
-    const {products, addToCart} = this.props;
+    const {products, addToCart, cart} = this.props;
 
     return (
       <section>
@@ -19,6 +19,7 @@ class ProductsList extends Component {
               <Product
                 product={product}
                 addToCart={addToCart}
+                cart={cart}
               />
             </li>
           ))}

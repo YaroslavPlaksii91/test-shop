@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 
 class Product extends Component {
   render() {
-    const {product, addToCart} = this.props;
+    const {product, addToCart, cart} = this.props;
+    const addedProduct = cart.find((item) => item.id === product.id);
+    const isAdded = addedProduct && addedProduct.isAdded;
 
     return (
       <article className="card border-0">
@@ -21,9 +23,10 @@ class Product extends Component {
           <p className="card-text mb-2 product-price">{product.price} UAH</p>
           <button
             onClick={() => addToCart(product.id)}
-            className="btn btn-primary"
+            className={`btn ${isAdded ? 'btn-success' : 'btn-primary'}`}
+            disabled={isAdded}
           >
-            Add to Cart
+            {isAdded ? 'Added' : 'Add to Cart'}
           </button>
         </div>
       </article>

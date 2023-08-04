@@ -54,7 +54,7 @@ class App extends Component {
 
     return (
       <div className="container">
-        <h1>Demo Store</h1>
+        <h1 className="h1 text-center mb-4">Demo Store</h1>
         <div className="row">
           <div className="col-md-8">
             <ProductsList

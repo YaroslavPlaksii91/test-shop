@@ -107,7 +107,7 @@ function watch() {
   gulp.watch(paths.html.dest).on('change', browsersync.reload);
   gulp.watch(paths.html.src, html);
   gulp.watch(paths.styles.src, styles);
-  gulp.watch(paths.scripts.src, scripts);
+  gulp.watch('src/**/*.js', scripts);
   gulp.watch(paths.images.src, img);
 }
 

@@ -1,0 +1,11 @@
+.cart-total {
+  font-size: 18px;
+
+  & span {
+    font-weight: 700;
+  }
+}
+
+.cart-item:not(:last-child) {
+  margin-bottom: 20px;
+}

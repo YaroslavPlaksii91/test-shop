@@ -13,12 +13,12 @@ class Product extends Component {
             alt={product.name}
             width={300}
             height={300}
-            className="card-img-top"
+            className="card-img-top product-image"
           />
         </div>
         <div className="card-body text-center">
           <h3 className="card-title">{product.name}</h3>
-          <p className="card-text mb-2">{product.price}</p>
+          <p className="card-text mb-2 product-price">{product.price} UAH</p>
           <button
             onClick={() => addToCart(product.id)}
             className="btn btn-primary"

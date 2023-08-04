@@ -7,29 +7,31 @@ class Cart extends Component {
     const totalCost = products.reduce((sum, product) => sum + product.price, 0);
 
     return (
-      <div>
-        <h2>Cart</h2>
+      <div className="text-center">
+        <h2 className="h2 mb-4">Cart</h2>
         {products.length === 0 ? (
-          <p>Кошик пустий (0 грн)</p>
+          <p>Cart id empty (0 UAH)</p>
         ) : (
           <div>
-            <ul className="list-group">
+            <ul className="list-group mb-4">
               {products.map((product) => (
                 <li
                   key={product.id}
-                  className="list-group-item"
+                  className="products-item cart-item"
                 >
                   <h3>{product.name}</h3>
-                  <p>{product.price} грн</p>
+                  <p className="product-price">{product.price} UAH</p>
                 </li>
               ))}
             </ul>
-            <p>Загальна вартість: {totalCost} грн</p>
+            <p className="cart-total mb-4">
+              Total value: <span>{totalCost} UAH</span>
+            </p>
             <button
               onClick={clearCart}
-              className="btn btn-danger"
+              className="btn btn-danger "
             >
-              Очистити
+              Clear
             </button>
           </div>
         )}

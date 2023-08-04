@@ -10,11 +10,11 @@ class ProductsList extends Component {
     return (
       <section>
         <h2 className="h2 mb-4 text-center">Products</h2>
-        <ul className="list-group grid">
+        <ul className="list-group products-list">
           {products.map((product) => (
             <li
               key={product.id}
-              className="list-group-item col-md-6"
+              className="products-item"
             >
               <Product
                 product={product}

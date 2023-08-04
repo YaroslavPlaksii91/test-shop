@@ -1,5 +1,17 @@
+
 ```
 # Demo Store
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [License](#license)
+- [Credits](#credits)
+
+## Introduction
 
 This is a simple demo store web application built with React. It allows users to browse a list of products and add them to the cart. The cart can be cleared, and the selected products are persisted in local storage.
 
@@ -57,4 +69,3 @@ Feel free to fork and modify this project according to your needs. If you encoun
 
 Happy coding!
 ```
-
